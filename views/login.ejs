@@ -1,0 +1,31 @@
+<%- include ("./partials/messages"); %>
+<div class="divforloginpart">
+    <div class="subscribe">
+      <p id="user"><i class="fa fa-user" aria-hidden="true" style ="font-size :6vh"></i><br>LOGIN</p><br>
+      <form action="/users/login" method="POST">
+        <div class="inputBox1">
+            <!-- <input type="text" required="required"> -->
+            <input
+            type="email/name"
+            id="email"
+            name="email"
+            required="required"
+          />
+          <span class="user">Email</span>
+          </div>
+          <div class="inputBox">
+            <input
+            type="password"
+            id="password"
+            name="password"
+            required="required"
+          />
+            <span>Password</span>
+          </div>
+          <button type="submit" class="submit-btn">SUBMIT</div>
+      </form>
+    </div>
+  </div>
+  <p class="noacc">
+    No Account? <a href="/users/register">Register</a>
+  </p>

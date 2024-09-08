@@ -1,0 +1,52 @@
+<%- include ("./partials/messages"); %>
+<div class="divforregisterpart">
+    <div class="subscribe">
+      <p id="user"><i class="fa fa-user" aria-hidden="true" style ="font-size :6vh"></i><br>REGISTER</p><br>
+      <form action="/users/register" method="POST">
+        <div class="inputBox1">
+            <input
+            type="name"
+            id="name"
+            name="name"
+            required="required"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+          <span class="user">Name</span>
+        </div>
+        <div class="inputBox">
+            <input
+            type="email/name"
+            id="email"
+            name="email"
+            required="required"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+          <span class="user">Email</span>
+        </div>
+          <div class="inputBox3">
+            <input
+            type="password"
+            id="password"
+            name="password"
+            required="required"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+            <span>Password</span>
+          </div>
+          <div class="inputBox4">
+            <input
+            type="password"
+            id="password2"
+            name="password2"
+            required="required"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+          />
+            <span>Confirm Password</span>
+          </div>
+        <button type="submit" class="submit-btn">SUBMIT</div>
+      </form>
+    </div>
+  </div>
+  <p class="noacc">
+    Already have an Account? <a href="/users/login">Login</a>
+  </p>
